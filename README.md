@@ -9,15 +9,17 @@
 
 ## 下载
 
-到本仓库的 **Releases** 页下载：
+**直接下载链接**：[LotterySim_v13.19_win64.zip](https://github.com/chinahanyang1991-svg/lottery-sim-release/releases/download/v13.19/LotterySim_v13.19_win64.zip)
+
+也可以到本仓库的 **Releases** 页（Code 页右侧 → Releases → v13.19 → Assets）下载同一文件。
 
 | 项目 | 值 |
 | --- | --- |
 | 标签 | `v13.19` |
 | 文件名 | `LotterySim_v13.19_win64.zip` |
-| 大小 | 260,080,902 字节（约 248 MB） |
-| SHA-256 | `0fa2d333e3d34cedf71171c39d4570a26920fdc7ea375d6ed878cea5ae1c829b` |
-| MD5 | `3eb36f82c66692f6ef991a0bc1362d74` |
+| 大小 | 260,081,850 字节（约 248 MB） |
+| SHA-256 | `7ec0347fdbb3f626e26f238f0666a4de4bc21a8927d605898f007c7290eee15c` |
+| MD5 | `4b3597aa6933c8c3747685cab0f2b822` |
 
 文件名用英文是因为 GitHub 的附件名不接受中文字符；压缩包里的内容仍是中文目录名。
 
