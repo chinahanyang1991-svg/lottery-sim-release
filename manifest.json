@@ -1,0 +1,10 @@
+{
+  "version": "v13.19",
+  "url": "https://github.com/chinahanyang1991-svg/lottery-sim-release/releases/download/v13.19/LotterySim_v13.19_win64.zip",
+  "sha256": "0fa2d333e3d34cedf71171c39d4570a26920fdc7ea375d6ed878cea5ae1c829b",
+  "notes": "乐透模拟 v13.19 -- 四玩法号码模拟与统计。首发版本。",
+  "min_env": {
+    "windows": "10"
+  },
+  "sig": "V0NIFE1hUOngD8FtDRHOCUpqABECpxrSLWXfrdCdcsvgwj7U76t8NuHqmVD15RvEM3fx95dfS2TFFrzRnvH7rnYRIqJQ0rfFhC2laisLhRND7QsC8LPONEAh6wkbdc4TCe9CYf/K4bVse6aPqSUbmQiTO1JlGjsMWVMSpQEtKHLPuDxXzkzCyi6LlcfnAwEXn/0b0Vr4XqrNKGWnxYPYNMME8K1DxFxdIiBI+DOtDUCIzsMsdlqmhrDU45CWOYCwpz2vJzLfSWo0G21XjHJb1OMuCzbVSar+6c+GQcaMapBLDxCEc4Zs6Ppqv4BLZ6u12iRtsiDnu3PxxOpT+AB3yg=="
+}
