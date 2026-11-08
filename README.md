@@ -3,31 +3,31 @@
 五种玩法（双色球 / 大乐透 / 七乐彩 / 快乐8 / 七星彩）的号码模拟与统计分析桌面程序。
 这个仓库只放**可直接双击运行的安装包**，不放源码。
 
-当前版本：**v13.35**（Windows x64）
+当前版本：**v13.38**（Windows x64）
 
 ---
 
 ## 下载
 
-**直接下载链接**：[LotterySim_v13.35_win64.zip](https://github.com/chinahanyang1991-svg/lottery-sim-release/releases/download/v13.35/LotterySim_v13.35_win64.zip)
+**直接下载链接**：[LotterySim_v13.38_win64.zip](https://github.com/chinahanyang1991-svg/lottery-sim-release/releases/download/v13.38/LotterySim_v13.38_win64.zip)
 
-也可以到本仓库的 **Releases** 页（Code 页右侧 → Releases → v13.35 → Assets）下载同一文件。
+也可以到本仓库的 **Releases** 页（Code 页右侧 → Releases → v13.38 → Assets）下载同一文件。
 
 | 项目 | 值 |
 | --- | --- |
-| 标签 | `v13.35` |
-| 文件名 | `LotterySim_v13.35_win64.zip` |
-| 大小 | 271,759,488 字节（约 259 MB） |
-| SHA-256 | `767094f96fb5daf60a61c490f4a57651bb4b1e7fbbcf82b1cd8a932a212807bd` |
-| MD5 | `a38c422c6ebe64cd462f0ed4a7b89bb3` |
-| 程序本体 `乐透模拟.exe` MD5 | `618e6c4aea6de7f55bc37056ad95c518` |
+| 标签 | `v13.38` |
+| 文件名 | `LotterySim_v13.38_win64.zip` |
+| 大小 | 271,773,715 字节（约 259 MB） |
+| SHA-256 | `575272079eefd9fb200ff9780eeec88ae0aaa96e8fd7c62d5f590d8e1445c6b8` |
+| MD5 | `29328d3c840ae8443158b0807453b314` |
+| 程序本体 `乐透模拟.exe` MD5 | `004ed98ab2224bf1f53e35cba81d4cf7` |
 
 文件名用英文是因为 GitHub 的附件名不接受中文字符；压缩包里的内容仍是中文目录名。
 
 下载后建议先核对摘要再解压。Windows PowerShell 里可以这样算：
 
 ```powershell
-Get-FileHash .\LotterySim_v13.35_win64.zip -Algorithm SHA256
+Get-FileHash .\LotterySim_v13.38_win64.zip -Algorithm SHA256
 ```
 
 ## 安装与运行
@@ -49,17 +49,21 @@ Get-FileHash .\LotterySim_v13.35_win64.zip -Algorithm SHA256
 - 走一次环境自检，检查运行目录、数据库与依赖是否齐全。
 - 在 exe 同目录生成 `lottery.db`（随包已经带了一份含历史开奖数据的库，程序会直接用）。
 
+**一项已知事项**：数据分析组件 pyarrow（arrow.dll）在 Windows 上若于后台线程加载会触发一次访问冲突
+（access violation）。本程序已把该组件的加载固定在主线程以规避——启动预热只把文件读进缓存、
+不在后台执行导入。这是随包第三方组件的既有问题；个别机器启动时若仍遇到异常，请重试。
+
 ## 随包带的历史数据
 
 压缩包里已经带好五种玩法的开奖历史，解压即可用，不需要联网抓：
 
 | 玩法 | 期数 | 期号范围 |
 | --- | --- | --- |
-| 双色球 | 3522 | 2003001 – 2026125 |
-| 大乐透 | 2942 | 07001 – 26124 |
-| 七乐彩 | 3005 | 2007001 – 2026125 |
-| 快乐8 | 2112 | 2020001 – 2026291 |
-| 七星彩 | 3409 | 04101 – 26125 |
+| 双色球 | 3524 | 2003001 – 2026127 |
+| 大乐透 | 2944 | 07001 – 26126 |
+| 七乐彩 | 3008 | 2007001 – 2026128 |
+| 快乐8 | 2117 | 2020001 – 2026296 |
+| 七星彩 | 3411 | 04101 – 26127 |
 
 随包库里的开奖数据带一条哈希链封印，程序启动后会在后台逐期复算这条链，
 链断了或被人改过会提示；历史数据本身不需要联网获取。
